@@ -48,7 +48,7 @@ table {
     border-spacing: 0;
 }
 body{
-    background-image: url("imagem/foto2.jpg");
+    
     background-size: cover;
     /* background-repeat: no-repeat;
     background-position: center; */
@@ -64,6 +64,7 @@ body{
     justify-content: center;
     flex-direction: column;
 }
+
 
 .titulo{
     font-size: 48px;
@@ -95,7 +96,13 @@ body{
 }
 
 .meu-video{
-    width: 350px;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: absolute;
+    left: 0;
+    top:0;
+    z-index: -1;  /* faz o video ficar atras do conteudo */
 }
 
 .botao-comprar{
@@ -110,8 +117,12 @@ body{
     font-family: "Nunito";
     letter-spacing: 3px;
     font-weight: 600;
-    
 }
+
+.botao-comprar:hover{
+    background-color: blueviolet;
+    color:yellow;
+   }
 
 .formulario{
     margin-top: 30px;
@@ -121,10 +132,11 @@ body{
 .rotulo{
     font-family: "nunito";
     font-size: 18px;
-    font-weight: 300;
-    margin-bottom: 10px;
-    
+    font-weight: 400;
+    display: block;
+    text-align: left; 
     }
+
 .campo{
     width: 100%;
     padding: 10px;
@@ -134,4 +146,3 @@ body{
     margin-bottom: 10px;
     box-sizing: border-box;
 }
-
